@@ -172,7 +172,7 @@ export default function Page() {
                             </Box>
                             <Box bg='rgb(52, 50, 49)' color='white' borderColor='rgb(102, 100, 109)' borderWidth='1px' borderRadius='md' p={4} mt={4}>
     <p className={styles.bgText}>
-        Check out this awesome video:
+        Live Stream
     </p>
     <Center>
     <iframe
