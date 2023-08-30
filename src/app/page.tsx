@@ -170,6 +170,21 @@ export default function Page() {
                                     {/* account.address ={accountFromContext?.address} */}
                                 </p>
                             </Box>
+                            <Box bg='rgb(52, 50, 49)' color='white' borderColor='rgb(102, 100, 109)' borderWidth='1px' borderRadius='md' p={4} mt={4}>
+    <p className={styles.bgText}>
+        Check out this awesome video:
+    </p>
+    <Center>
+        <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/watch?v=9Tdemh0slZk"
+            title="Autonomous Audio YouTube Video"
+            frameBorder="0"
+            allowFullScreen
+        ></iframe>
+    </Center>
+</Box>
                             <p style={{ textAlign: 'center', marginTop: '10px' }}>
     <a href="https://www.twitter.com/caseywescott" target="_blank" rel="noopener noreferrer" style={{ color: 'white', fontFamily: 'Poppins', fontWeight: 'bold' }}>
         @CaseyWescott
