@@ -1,3 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+.bgText {
+  font-family: 'Poppins', sans-serif; /* Add this line */
+  /* Existing styles */
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  /* Other properties for body if needed */
+}
+
 :root {
   --max-width: 1100px;
   --border-radius: 12px;

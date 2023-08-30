@@ -115,20 +115,20 @@ export default function Page() {
         <ChakraProvider>
             <Box style={{ backgroundColor:'rgb(52, 50, 49)', color: 'rgb(152, 150, 149)'  }}  minHeight="100vh"> {/* Set the background color and minHeight */}
                 <div>
-                <p className={styles.bgText} style={{ color: 'white', fontSize: '45px', marginBottom: '7px', fontFamily: 'Poppins, sans-serif'  }}>
-                        Autonomous Audio
-                    </p>
+                <p className={styles.bgText} style={{ marginBottom: '5px', color: 'white', fontSize: '45px', fontFamily: 'Poppins, sans-serif' }}>
+    Autonomous Audio
+</p>
                     <Center>
                         <Image src={starknetjsImg} alt='starknet.js' width={150} height={150} />
                     </Center>
-                    <p className={styles.bgText}>
-                        Please connect to testnet network
-                    </p>
+                    <p className={styles.bgText} style={{ color: 'grey', fontSize: '25px', fontFamily: 'Poppins, sans-serif' }}>
+    Please connect to testnet network
+</p>
                     <div>
                         {!isConnected ? (
                             <Center>
                                 <Button
-                                    ml="4"
+                                    //ml="4"
                                     textDecoration="none !important"
                                     outline="none !important"
                                     boxShadow="none !important"
@@ -160,20 +160,11 @@ export default function Page() {
                                
                                 {!!providerFromContext && (
                                     <InteractContract></InteractContract>
-                                )} <Box bg='rgb(52, 50, 49)' color='white' borderColor='rgb(102, 100, 109)' borderWidth='1px' borderRadius='md'>
-                                <p className={styles.text1}>
-                                    {/* address = {addressAccountFromContext}<br /> */}
-                                    {chainFromContext}<br />
-                                    Connected ={isConnected ? "Yes" : "No"}<br />
-                                    {/* account.address ={accountFromContext?.address} */}
-                                </p>
-                            </Box>
-                            <p style={{ textAlign: 'center', marginTop: '10px' }}>
-    <a href="https://www.twitter.com/caseywescott" target="_blank" rel="noopener noreferrer" style={{ color: 'white', fontFamily: 'Poppins', fontWeight: 'bold' }}>
-        @CaseyWescott
-    </a>
-</p>
-                                <br />
+                                )} 
+                            
+                            
+                                
+                                <Text textAlign='center' fontSize={20} fontFamily='Poppins'>Live Stream</Text>
                                 {/* <Slider
                                     aria-label="slider-example"
                                     defaultValue={50}
@@ -203,9 +194,32 @@ export default function Page() {
                                 </Grid> */}
                             </>
                         )}
-                    </div>
-                </div>
+                        {isConnected && (
+                <Center>
+                    <iframe
+                        width="560"
+                        height="315"
+                        src="https://www.youtube.com/embed/bP9anVOluHM?si=AL01Aeq7VujXkMeg"
+                        title="YouTube video player"
+                        frameBorder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        //allowFullScreen
+                    ></iframe>
+                </Center>
+            )}
+            <Box textAlign="center" marginTop="6px" marginLeft="opx" marginBottom="0" fontFamily="Poppins, sans-serif">
+                <a href="https://www.twitter.com/caseywescott" target="_blank" rel="noopener noreferrer" style={{ color: 'grey', fontFamily: 'Poppins', fontWeight: 'bold' }}>
+                    @CaseyWescott
+                </a>
             </Box>
+            
+
+                    </div>
+                    
+                </div>
+               
+            </Box>
+           
         </ChakraProvider>
     );
 

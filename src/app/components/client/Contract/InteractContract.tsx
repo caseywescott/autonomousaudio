@@ -70,16 +70,15 @@ export default function InteractContract() {
                 </Box>
             } */}
             {!!blockFromContext.blockNumber &&
-                <Box bg='rgb(52, 50, 49)' color='white' borderWidth='3px' borderColor='rgb(102, 100, 109)' borderRadius='xl' p={2}>
-                <>
-                    <Text textAlign='center' fontSize={20}> Press Buttons to Select Musical Event :  </Text>
-                    <PlayWithCairo1></PlayWithCairo1>
-                </>
-
-            </Box>
+               <Box bg='rgb(52, 50, 49)' color='white' borderWidth='3px' borderColor='rgb(102, 100, 109)' borderRadius='xl' p={2}>
+    <>
+        <Text textAlign='center' fontSize={20} fontFamily='Poppins'>Press Buttons to Select Musical Event :</Text>
+        <PlayWithCairo1></PlayWithCairo1>
+    </>
+</Box>
             }
 
-<Box bg='rgb(52, 50, 49)' color='white' borderColor='rgb(102, 100, 109)' borderRadius='md' borderWidth='1px'>
+<Box bg='rgb(52, 50, 49)' color='grey' borderColor='rgb(102, 100, 109)' borderRadius='md' borderWidth='1px'>
                 {!blockFromContext.blockNumber ? (
                     <Center>
                         <Spinner color="blue" size="sm" mr={4} />  Fetching data ...
