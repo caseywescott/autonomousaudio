@@ -178,11 +178,11 @@ export default function Page() {
     <iframe
   width="560"
   height="315"
-  src="http://www.youtube.com/embed/QAKJUnOnKck?autoplay=0&amp;loop=0&amp;showinfo=0&amp;theme=dark&amp;[...]"
+  src="https://www.youtube.com/embed/qkb5RBLS4_I?si=5JOfUjOnzoD9gbJd"
   title="YouTube video player"
-  frameborder="0"
+  frameBorder="0"  // Use frameBorder instead of frameborder
   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-  allowfullscreen
+  allowFullScreen
 ></iframe>
     </Center>
 </Box>
