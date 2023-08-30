@@ -2,7 +2,7 @@ import './globals.css'
 
 export const metadata = {
   title: 'AutonomousAudio-for-Starknet',
-  description: 'Airdrop on Starknet network',
+  description: 'AutonomousAudio Controller on Starknet network',
 }
 
 export default function RootLayout({
