@@ -60,7 +60,6 @@ export default function InteractContract() {
     return (
         <>
             
-            
             {/* {!!blockFromContext.blockNumber &&
                 <Box bg='yellow.300' color='black' borderWidth='1px' borderRadius='lg'>
                     <Center> Updated each new block :</Center>
@@ -70,16 +69,14 @@ export default function InteractContract() {
 
                 </Box>
             } */}
-            
             {!!blockFromContext.blockNumber &&
                 <Box bg='rgb(52, 50, 49)' color='white' borderWidth='3px' borderColor='rgb(102, 100, 109)' borderRadius='xl' p={2}>
-                    <>
-                        <Text textAlign='center' fontSize={20}> Press Buttons to Select Musical Event :  </Text>
-                        <PlayWithCairo1></PlayWithCairo1>
-                    </>
+                <>
+                    <Text textAlign='center' fontSize={20}> Press Buttons to Select Musical Event :  </Text>
+                    <PlayWithCairo1></PlayWithCairo1>
+                </>
 
-                </Box>
-
+            </Box>
             }
 
 <Box bg='rgb(52, 50, 49)' color='white' borderColor='rgb(102, 100, 109)' borderRadius='md' borderWidth='1px'>
@@ -90,8 +87,8 @@ export default function InteractContract() {
                 ) :
                     (
                         <>
-                            {/* <Text className={styles.text1}>Last block number = {blockFromContext.blockNumber} timerId = {timerId ? "Set" : "Not set"} </Text> */}
-                            {/* <Text className={styles.text1}>BlockHash = {blockFromContext.blockHash}  </Text>
+                            {/* <Text className={styles.text1}>Last block number = {blockFromContext.blockNumber} timerId = {timerId ? "Set" : "Not set"} </Text>
+                            <Text className={styles.text1}>BlockHash = {blockFromContext.blockHash}  </Text>
                             <Text className={styles.text1}>BlockTimeStamp = {blockFromContext.timeStamp}  </Text> */}
                             <Text className={styles.text1}>Block Gas Price = {blockFromContext.gasPrice}  </Text>
                             <Divider></Divider>

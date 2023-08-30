@@ -7,15 +7,10 @@ import { useState } from "react";
 import { ChakraProvider } from '@chakra-ui/react'
 import { useStoreWallet } from './components/Wallet/walletContext';
 
-import { encode } from "starknet";
-import { StarknetWindowObject, connect } from "get-wallet-starknet";
+import { encode, Provider } from "starknet";
+import { StarknetWindowObject, connect } from "get-starknet";
 
 import starknetjsImg from '../../public/Images/StarkNet-JS_logo_copy.png';
-
-
-import { Slider, SliderTrack, SliderFilledTrack, SliderThumb } from "@chakra-ui/react";
-import { Grid } from "@chakra-ui/react";
-
 
 export default function Page() {
 
@@ -35,7 +30,7 @@ export default function Page() {
 
     const handleConnectClick = async () => {
         const wallet = await connect({ modalMode: "alwaysAsk", modalTheme: "light" });
-        await wallet?.enable({ starknetVersion: "v5" } as any);
+        await wallet?.enable({ starknetVersion: "v4" } as any); // should be v5, but necessary to fake ArgentX
         setWallet(wallet);
         const addr = encode.addHexPrefix(encode.removeHexPrefix(wallet?.selectedAddress ?? "0x").padStart(64, "0"));
         setAddressAccount(addr);
@@ -45,15 +40,17 @@ export default function Page() {
         }
         if (wallet?.isConnected) {
             setChain(wallet.chainId); // not provided by Braavos
-            setProvider(wallet.provider);
+            setProvider(wallet.provider); // ********** for serial
+            // setProvider(new Provider({ sequencer: { baseUrl: "http://127.0.0.1:5050" } })); // ************* debug in devnet *********
         }
     }
-/*
+
+    /*
     return (
         <ChakraProvider>
             <div>
                 <p className={styles.bgText}>
-                    Test get-wallet-starknet with starknet.js v5.9.0
+                    Test get-starknet v3.0.1 with starknet.js v5.17.0
                 </p>
                 <Center>
                     <Image src={starknetjsImg} alt='starknet.js' width={150} height={150} />
@@ -111,6 +108,7 @@ export default function Page() {
             </div >
         </ChakraProvider>
     )
+
     */
 
     return (
@@ -166,26 +164,10 @@ export default function Page() {
                                 <p className={styles.text1}>
                                     {/* address = {addressAccountFromContext}<br /> */}
                                     {chainFromContext}<br />
-                                    Connected = {isConnected ? " Yes" : " No"}<br />
+                                    Connected ={isConnected ? "Yes" : "No"}<br />
                                     {/* account.address ={accountFromContext?.address} */}
                                 </p>
                             </Box>
-                            <Box bg='rgb(52, 50, 49)' color='white' borderColor='rgb(102, 100, 109)' borderWidth='1px' borderRadius='md' p={4} mt={4}>
-    <p className={styles.bgText}>
-        Live Stream
-    </p>
-    <Center>
-    <iframe
-  width="560"
-  height="315"
-  src="https://www.youtube.com/embed/qkb5RBLS4_I?si=5JOfUjOnzoD9gbJd"
-  title="YouTube video player"
-  frameBorder="0"  // Use frameBorder instead of frameborder
-  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-  allowFullScreen
-></iframe>
-    </Center>
-</Box>
                             <p style={{ textAlign: 'center', marginTop: '10px' }}>
     <a href="https://www.twitter.com/caseywescott" target="_blank" rel="noopener noreferrer" style={{ color: 'white', fontFamily: 'Poppins', fontWeight: 'bold' }}>
         @CaseyWescott
