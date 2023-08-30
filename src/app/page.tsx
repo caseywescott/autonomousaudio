@@ -121,7 +121,7 @@ export default function Page() {
                     <Center>
                         <Image src={starknetjsImg} alt='starknet.js' width={150} height={150} />
                     </Center>
-                    <p className={styles.bgText} style={{ color: 'grey', fontSize: '25px', fontFamily: 'Poppins, sans-serif' }}>
+                    <p className={styles.bgText} style={{ color: 'grey', fontSize: '22px', fontFamily: 'Poppins, sans-serif' }}>
     Please connect to testnet network
 </p>
                     <div>
@@ -143,7 +143,7 @@ export default function Page() {
                             <>
                                 <Center>
                                     <Button
-                                        ml="4"
+                                        ml="0"
                                         textDecoration="none !important"
                                         outline="none !important"
                                         boxShadow="none !important"

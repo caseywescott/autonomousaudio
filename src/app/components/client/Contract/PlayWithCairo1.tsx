@@ -100,7 +100,7 @@ export default function PlayWithCairo1() {
                             style={{ marginBottom: '10px' }} 
                 templateColumns="repeat(2, 1fr)"
                 gap={4}
-                mt={4}
+                mt={0}
             >
                 <Button onClick={() => IncreaseBalance4(1)}>Sparkle</Button>
     <Button onClick={() => IncreaseBalance4(2)}>Accelerandos</Button>
