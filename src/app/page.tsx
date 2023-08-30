@@ -178,7 +178,7 @@ export default function Page() {
     <iframe
   width="560"
   height="315"
-  src="https://www.youtube.com/embed/E10AyGSqSDU"
+  src="http://www.youtube.com/embed/QAKJUnOnKck?autoplay=0&amp;loop=0&amp;showinfo=0&amp;theme=dark&amp;[...]"
   title="YouTube video player"
   frameborder="0"
   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
