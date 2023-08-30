@@ -117,7 +117,7 @@ export default function PlayWithCairo1() {
                             </Center>
                         </div>
                         {!!transactionHash && (
-                            <Box bg='green.200' color='black' borderWidth='1px' borderColor='green.800' borderRadius='md' p={1} marginTop={2}>
+                            <Box style={{ backgroundColor:'rgb(52, 50, 49)', color: 'rgb(152, 150, 149)'  }} color='white' borderWidth='1px' borderColor='rgb(52, 50, 49)' borderRadius='md' p={1} marginTop={2}>
                                 <Text className={styles.text1}>Last transaction status :</Text>
                                 <TransactionStatus transactionHash={transactionHash}></TransactionStatus>
                             </Box>
