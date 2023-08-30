@@ -60,7 +60,7 @@ export default function PlayWithCairo1() {
     }
 
      function IncreaseBalance4(amount: number) {
-        cairo1Contract.increase_balance_slider(amount,23)
+        cairo1Contract.increase_balance_slider(23,amount)
             .then((resp: InvokeFunctionResponse) => {
                 console.log("increaseBalance txH =", resp.transaction_hash)
                 setTransactionHash(resp.transaction_hash);
