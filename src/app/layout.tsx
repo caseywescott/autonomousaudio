@@ -1,7 +1,7 @@
 import './globals.css'
 
 export const metadata = {
-  title: 'Airdrop-for-Starknet',
+  title: 'AutonomousAudio-for-Starknet',
   description: 'Airdrop on Starknet network',
 }
 
