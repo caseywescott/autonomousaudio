@@ -175,7 +175,14 @@ export default function Page() {
         Check out this awesome video:
     </p>
     <Center>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/E10AyGSqSDU?si=VLizw9qF3aWVm4Ub" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/watch?v=bP9anVOluHM"
+            title="Autonomous Audio YouTube Video"
+            frameBorder="0"
+            allowFullScreen
+        ></iframe>
     </Center>
 </Box>
                             <p style={{ textAlign: 'center', marginTop: '10px' }}>
