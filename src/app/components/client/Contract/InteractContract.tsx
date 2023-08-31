@@ -72,7 +72,7 @@ export default function InteractContract() {
             {!!blockFromContext.blockNumber &&
                <Box bg='rgb(52, 50, 49)' color='white' borderWidth='3px' borderColor='rgb(102, 100, 109)' borderRadius='xl' p={2}>
     <>
-        <Text textAlign='center' fontSize={19} fontFamily='Poppins'>Press Buttons to Select Musical Events :</Text>
+        <Text textAlign='center' fontSize={19} fontFamily='Poppins'>Press Buttons to Select Musical Events</Text>
         <PlayWithCairo1></PlayWithCairo1>
     </>
 </Box>
