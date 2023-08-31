@@ -128,7 +128,7 @@ export default function Page() {
                         {!isConnected ? (
                             <Center>
                                 <Button
-                                    //ml="4"
+                                    mb="2"
                                     textDecoration="none !important"
                                     outline="none !important"
                                     boxShadow="none !important"
@@ -164,7 +164,6 @@ export default function Page() {
                             
                             
                                 
-                                <Text textAlign='center' fontSize={20} fontFamily='Poppins'>Live Stream</Text>
                                 {/* <Slider
                                     aria-label="slider-example"
                                     defaultValue={50}
@@ -194,7 +193,8 @@ export default function Page() {
                                 </Grid> */}
                             </>
                         )}
-                        {isConnected && (
+                                                        <Text textAlign='center' fontSize={20} mb="2" fontFamily='Poppins'>Live Stream</Text>
+
                 <Center>
                     <iframe
                         width="560"
@@ -206,7 +206,7 @@ export default function Page() {
                         //allowFullScreen
                     ></iframe>
                 </Center>
-            )}
+            
             <Box textAlign="center" marginTop="6px" marginLeft="opx" marginBottom="0" fontFamily="Poppins, sans-serif">
                 <a href="https://www.twitter.com/caseywescott" target="_blank" rel="noopener noreferrer" style={{ color: 'grey', fontFamily: 'Poppins', fontWeight: 'bold' }}>
                     @CaseyWescott
