@@ -103,13 +103,13 @@ export default function PlayWithCairo1() {
                 mt={0}
             >
                 <Button onClick={() => IncreaseBalance4(1)}>Sparkle</Button>
-    <Button onClick={() => IncreaseBalance4(2)}>Accelerandos</Button>
-    <Button onClick={() => IncreaseBalance4(3)}>Crackle</Button>
+    <Button onClick={() => IncreaseBalance4(2)}>Accelerando</Button>
+    <Button onClick={() => IncreaseBalance4(3)}>Arp</Button>
     <Button onClick={() => IncreaseBalance4(4)}>Melody</Button>
-    <Button onClick={() => IncreaseBalance4(5)}>Boom</Button>
+    <Button onClick={() => IncreaseBalance4(5)}>Bass</Button>
     <Button onClick={() => IncreaseBalance4(6)}>Drone</Button>
-    <Button onClick={() => IncreaseBalance4(7)}>Chords</Button>
-    <Button onClick={() => IncreaseBalance4(8)}>Percussive</Button>
+    <Button onClick={() => IncreaseBalance4(7)}>Decelerando</Button>
+    <Button onClick={() => IncreaseBalance4(8)}>Waves</Button>
     <Button onClick={() => IncreaseBalance4(9)}>Change Chords</Button>
     <Button onClick={() => IncreaseBalance4(10)}>Glitches</Button>
 
