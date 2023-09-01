@@ -193,7 +193,7 @@ export default function Page() {
                                 </Grid> */}
                             </>
                         )}
-                                                        <Text textAlign='center' fontSize={20} mb="2" fontFamily='Poppins'>Live Stream Today, 1-5pm PST</Text>
+                                                        <Text textAlign='center' fontSize={20} mb="2" fontFamily='Poppins'>Previous Live Stream</Text>
 
                 <Center>
                     <iframe
